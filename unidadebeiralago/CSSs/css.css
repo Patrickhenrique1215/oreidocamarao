@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+
+.asr {
+	margin-top: 80px;
+    position: relative; /* Permite que os elementos filhos sejam posicionados em relação a este contêiner */
+    height: 80vh; /* Ajuste a altura conforme necessário para mostrar apenas 80% da imagem */
+    overflow: hidden; /* Esconde a parte da imagem que excede o contêiner */
+}
+
+.asr img {
+    width: auto; /* Ajusta a imagem para ocupar 100% do contêiner */
+    height: 100%; /* Mantém a proporção da imagem */
+
+}
+
+.overlay-text3 {
+    position: absolute; /* Permite que o texto seja posicionado sobre a imagem */
+    bottom: 200Px; /* Move o texto para cima a partir da parte inferior do contêiner */
+    left: 70%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-70%); /* Ajusta a posição do texto */
+    color: white; /* Muda a cor do texto */
+    font-size: 1.5rem; /* Ajuste o tamanho da fonte conforme necessário */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(89, 54, 46, 0.8); /* Fundo semi-transparente opcional */
+    padding: 30px; /* Espaço ao redor do texto */
+}
+
+
+/*--------------------------------------------------------*/
+.pial {
+	margin: 25 0 20 0;
+    display: flex; /* Permite que as divs sejam dispostas lado a lado */
+}
+
+.piala {
+    display: flex; /* Para alinhar o texto e a imagem dentro de piala */
+    width: 50%; /* Faz com que piala ocupe 50% da largura da seção */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+}
+
+.piala p {
+    margin: 10%; /* Remove margens do parágrafo para evitar overflow */
+    width: 50%; /* O parágrafo ocupa 50% da largura da piala */
+    font-size: 1.5rem;
+}
+
+.piala img {
+    width: 25%; /* A imagem ocupa 50% da largura da piala */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.pialb {
+    display: flex; /* Permite centralizar o conteúdo dentro de pialb */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 50%; /* Faz com que pialb ocupe 50% da largura da seção */
+}
+
+.pialb img {
+    width: 60%; /* Ajusta a imagem para ocupar 70% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/*---------------------------------------------------------------------*/
+
+.rito {
+    display: flex; /* Permite que secimg e tops1 sejam dispostos lado a lado */
+    background-color: rgba(219, 219, 219, 0.3);
+    margin-bottom: -300px;
+
+}
+
+.secimg {
+    width: 50%; /* Faz com que secimg ocupe 50% da largura da seção */
+    display: flex;
+    flex-direction: column; /* Coloca as imagens uma embaixo da outra */
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+}
+
+.ty1 {
+    width: 50%; /* Ocupa 50% da largura da div */
+    margin-left: 14px; /* Margem à esquerda */
+    position: relative; /* Permite o uso de posição absoluta */
+    z-index: 2; /* Garante que ty1 fique acima */
+}
+
+.ty1 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.ty2 {
+    width: 45%; /* Ocupa 65% da largura da div */
+    margin-left: 130px; /* Margem à direita */
+    position: relative; /* Permite o uso de posição absoluta */
+    top: -5%; /* Move para cima para sobrepor ty1 */
+    z-index: 3; /* Garante que ty2 fique acima */
+}
+
+.ty2 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.ty3 {
+    width: 45%; /* Ocupa 45% da largura da div */
+    margin-left: 0; /* Sem margem à esquerda */
+    position: relative; /* Permite o uso de posição absoluta */
+    top: -10%; /* Move para cima para ficar atrás de ty2 */
+    z-index: 1; /* Garante que ty3 fique abaixo */
+}
+
+.ty3 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.ty4 {
+    width: 60%; /* Ocupa 60% da largura da div */
+    margin-left: 30%; /* Centraliza horizontalmente */
+    position: relative; /* Permite o uso de posição absoluta */
+    top: -20%; /* Move para cima para ficar atrás de ty3 */
+    z-index: 0; /* Garante que ty4 fique abaixo */
+}
+
+.ty4 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.ty5 {
+    width: 70%; /* Ocupa 50% da largura da div */
+    margin-right: auto; /* Margem à direita */
+    margin-left: auto;
+    position: relative; /* Permite o uso de posição absoluta */
+    top: -30%; /* Move para cima para sobrepor ty4 */
+    z-index: -1; /* Garante que ty5 fique acima */
+}
+
+.ty5 img {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+.tops1 {
+    width: 50%; /* Faz com que tops1 ocupe 50% da largura da seção */
+   
+}
+
+/*------------------------------------------------------------*/
+
+footer{
+	margin-top: 80px;
+	text-align: center;
+	opacity: 75%;
+	margin-bottom: 20px;
+}
+.fj1{
+	font-size: 0.9rem;
+}
+.fj2{
+	font-size: 1.5rem;
+}
+.fj4{
+	font-size: 0.9rem;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+	
+	.asr img {
+	    width: 140%; /* Ajusta a imagem para ocupar 100% do contêiner */
+	}
+	.overlay-text2 {
+	    bottom: 260Px; /* Move o texto para cima a partir da parte inferior do contêiner */
+	    font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
+	}
+	.pial {
+		margin: 20 0 20 0;
+	}
+
+	.piala p {
+	    font-size: 1rem;
+	}
+	.piala img {
+	    width: 30%; /* A imagem ocupa 50% da largura da piala */
+	    height: auto; /* Mantém a proporção da imagem */
+	}
+	.pialb img {
+	    width: 80%; /* Ajusta a imagem para ocupar 70% da largura da div */
+	}
+	.rito {
+ 	   display: block; /* Permite que secimg e tops1 sejam dispostos lado a lado */
+ 	   margin-bottom: 0;
+	}
+	.secimg {
+   		width: 100%; /* Faz com que secimg ocupe 50% da largura da seção */
+   		display: grid;
+   		grid-template-areas: 
+   		"ty1 ty3"
+   		"ty4 ty5"
+   		;
+	}
+	.ty1{grid-area: ty1}
+	.ty3{grid-area: ty3}
+	.ty4{grid-area: ty4}
+	.ty5{grid-area: ty5}
+	.ty1{
+		width: 100%;
+		margin-left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	.ty2{
+		display: none;
+	}
+	.ty3{
+		width: 100%;
+		margin-left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	.ty4{
+		width: 100%;
+		margin-left: 0;
+		top: 0;
+		z-index: 0;
+	}
+	.ty5{
+		width: 100%;
+		margin-left: 0;
+		top: 0;
+		z-index: 0;
+	}
+
+
+	.tops1{
+		width: 90%;
+		margin: 30px auto 30px auto;
+	}
+	.tops1 iframe{
+		height: 400px;
+	}
+
+}

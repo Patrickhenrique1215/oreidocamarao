@@ -1,0 +1,919 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+/*-------------------------------*/
+
+.body{
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow-x: hidden;
+	display: grid;
+  	grid-template-areas: 
+  	"topo"
+  	"petiscos"
+  	"alacarte"
+  	"drinks"
+  	"bebidasna"
+  	"bebidasa"
+  	"sobremesas"
+  	"footer"
+	;
+
+}
+
+.topo{
+	grid-area: topo;
+	background-color: black;
+	height: 100px;
+	margin-top: 50px;	
+}
+.topo > h1{
+	text-align: center;
+	font-size: 1.8rem;
+	color: white;
+	font-weight: 100;
+	padding-top: 15px;
+	margin-bottom: -10px;
+
+}
+.topo > p{
+	text-align: center;
+	font-size: 1rem;
+	color: white;
+	font-weight: 100;
+	margin-bottom: -10px;
+}
+
+.petiscos{
+	grid-area: petiscos;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backpetiscos.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;	
+}
+.petiscos > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.petiscos > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.alacarte{
+	grid-area: alacarte;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backalacarte.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;	
+}
+.alacarte > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.alacarte > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.drinks{
+	grid-area: drinks;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backdrinks.jpg"); 	
+   	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end; 
+	cursor: pointer;
+}
+.drinks > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.drinks > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.bebidasna{
+  	grid-area: bebidasna;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backbebidasna.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;  	
+}
+.bebidasna > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.bebidasna > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+.bebidasa{
+  	grid-area: bebidasa;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backbebidasa.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;  	
+}
+.bebidasa > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.bebidasa > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.sobremesas{
+  	grid-area: sobremesas;
+  	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backsobremesas.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;
+}
+.sobremesas > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.sobremesas > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+/* ---------------A PARTE DE PRODUTOS DE VARIAS PAGINAS  -------------  */
+
+.cdf{
+	display: grid;
+	grid-template-areas: 
+	"imagem title preço"
+	"imagem descr descr"
+	;
+	grid-template-columns: 20% 1fr;
+	align-items: start;
+	padding: 3% 3% 3% 5px;
+	grid-column-gap: 3%;
+}
+.cdf > img{
+	grid-area: imagem;
+	width: 100%;
+	height: auto;
+}
+.cdf > h3{
+	grid-area: title;
+	font-size: 1.1rem;
+	font-weight: normal;
+	opacity: 75%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.preço{
+	grid-area: preço;
+	color: red;
+	font-size: 1rem;
+	justify-self: end;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.subit{
+	font-size: 0.9rem;
+	opacity: 80%;
+	color: black;
+}
+.rs{
+	font-size: 0.6rem;
+	color: black;
+	opacity: 70%;
+}
+.descr{
+	grid-area: descr;
+	font-size: 0.8rem;
+	opacity: 80%;
+	align-self: end;
+	margin-top: 0;
+}
+
+
+/*   ==--------     PETISCOS    =--------- */
+
+.bodypetiscos{
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"camaroes diversos"
+	"footer footer"
+	;
+}
+.camaroes{
+	grid-area: camaroes;
+}
+.diversos{
+	grid-area: diversos;
+}
+.footer{
+	grid-area: footer;
+}
+
+.bannercamaroes{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/bannercama.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannercamaroes > h2{
+	color: white;
+}
+
+
+.bannerdiversos{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/ymy7uhpztlyk8syl8dpj.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerdiversos > h2{
+	color: white;
+}
+
+
+
+/*  ---------  A LA CARTE  ======== */
+.bodyalacarte{
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"ceviches camaroesalacarte"
+	"festivais frutosdomar"
+	"moquecas pescados"
+	"bacalhau carnes"
+	"kids ."
+	"footer footer"
+	;
+}
+.ceviches{
+	grid-area: ceviches;
+	margin-bottom: 5vh;
+}
+.camaroesalacarte{
+	grid-area: camaroesalacarte;
+	margin-bottom: 5vh;
+}
+.festivais{
+	grid-area: festivais;
+	margin-bottom: 5vh;
+}
+.frutosdomar{
+	grid-area: frutosdomar;
+	margin-bottom: 5vh;
+}
+.moquecas{
+	grid-area: moquecas;
+	margin-bottom: 5vh;
+}
+.pescados{
+	grid-area: pescados;
+	margin-bottom: 5vh;
+}
+.bacalhau{
+	grid-area: bacalhau;
+	margin-bottom: 5vh;
+}
+.carnes{
+	grid-area: carnes;
+	margin-bottom: 5vh;
+}
+.kids{
+	grid-area: kids;
+	margin-bottom: 5vh;
+}
+.footer{
+	grid-area: footer;
+}
+
+
+.bannerceviche{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/q8r7g3zkwioascjnwgb2.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerceviche > h2{
+	color: white;
+}
+
+.bannercamar{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/dfff6.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannercamar > h2{
+	color: white;
+}
+
+.bannerfest{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/fest.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerfest > h2{
+	color: white;
+}
+
+.bannerifz{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/ifz.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerifz > h2{
+	color: white;
+}
+
+.bannerw97{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/w97.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerw97 > h2{
+	color: white;
+}
+
+.bannervee{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/vee.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannervee > h2{
+	color: white;
+}
+
+.bannerkyf{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/kyf.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerkyf > h2{
+	color: white;
+}
+
+.bannergxv{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/gxv.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannergxv > h2{
+	color: white;
+}
+
+.bannernnv{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/nnv.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannernnv > h2{
+	color: white;
+}
+
+
+
+/*  === DRINKS    ======== */
+.bodydrinks{
+	display: grid;
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"drinks20"
+	"footer"
+	;
+}
+.drinks20{
+	grid-area: drinks20;
+	margin-bottom: 5vh;
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"bannerdrinks bannerdrinks"
+	"tem1            tem2"
+	;
+}
+.bannerdrinks{
+	grid-area: bannerdrinks;
+}
+.tem1{
+	grid-area: tem1;
+}
+.tem2{
+	grid-area: tem2;
+}
+.footer{
+	grid-area: footer;
+}
+.bannerdrinks{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/bannerdrinks.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerdrinks > h2{
+	color: white;
+}
+
+
+
+/*  ===========      BEBIDASNA   =======   */
+
+.bodybebidasna{
+	display: grid;
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"bebidas" 
+	"footer"
+	;
+}
+.bebidas{
+	grid-area: bebidas;
+	margin-bottom: 5vh;
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"bannerbebidasna bannerbebidasna"
+	"tem1              tem2"
+	;
+}
+.bannerbebidasna{
+	grid-area: bannerbebidasna;
+}
+.tem1{
+	grid-area: tem1;
+}
+.tem2{
+	grid-area: tem2;
+}
+.footer{
+	grid-area: footer;
+}
+
+.bannerbebidasna{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/teste2.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerbebidasna > h2{
+	color: white;
+}
+
+
+
+/* ===============  BEBIDASA   ======  */
+
+.bodybebidasa{
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"cervejas   licores"
+	"destilados cachaças"
+	"rums       vodkas"
+	"conhaques  whisky"
+	"footer     footer"
+	;
+}
+.cervejas{
+	grid-area: cervejas;
+	margin-bottom: 5vh;
+}
+.licores{
+	grid-area: licores;
+	margin-bottom: 5vh;
+}
+.destilados{
+	grid-area: destilados;
+	margin-bottom: 5vh;
+}
+.cachaças{
+	grid-area: cachaças;
+	margin-bottom: 5vh;
+}
+.rums{
+	grid-area: rums;
+	margin-bottom: 5vh;
+}
+.vodkas{
+	grid-area: vodkas;
+	margin-bottom: 5vh;
+}
+.conhaques{
+	grid-area: conhaques;
+	margin-bottom: 5vh;
+}
+.whisky{
+	grid-area: whisky;
+	margin-bottom: 5vh;
+}
+.footer{
+	grid-area: footer;
+}
+
+.bannerdwo{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/dwo.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerdwo > h2{
+	color: white;
+}
+
+.bannerjjm{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/jjm.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerjjm > h2{
+	color: white;
+}
+
+.bannerisqa{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/isqa.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerisqa > h2{
+	color: white;
+}
+
+.bannervfk{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/vfk.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannervfk > h2{
+	color: white;
+}
+
+.bannermhd{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/mhd.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannermhd > h2{
+	color: white;
+}
+
+.bannerpht{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/pht.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerpht > h2{
+	color: white;
+}
+
+.bannerwhis{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/whis.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannerwhis > h2{
+	color: white;
+}
+
+
+
+
+/* ==============   SOBREMESAS   --=========== */
+
+.bodysobremesas{
+	display: grid;
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"sobremesas" 
+	"footer"
+	;
+}
+.sobremex{
+	grid-area: sobremesas;
+	margin-bottom: 5vh;
+	display: grid;
+	grid-auto-columns: 50%;
+	grid-template-areas: 
+	"bannersobremesas bannersobremesas"
+	"tem1                tem2"
+	;
+}
+.bannersobremesas{
+	grid-area: bannersobremesas;
+}
+.tem1{
+	grid-area: tem1;
+}
+.tem2{
+	grid-area: tem2;
+}
+.footer{
+	grid-area: footer;
+}
+
+.bannersobremesas{
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/roga.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 140px;
+	display: flex;
+	align-items: flex-end;
+}
+.bannersobremesas > h2{
+	color: white;
+}
+
+
+
+
+
+
+
+/*   ============= FOOTER   -------------- */
+footer{
+	margin-top: 80px;
+	text-align: center;
+	opacity: 75%;
+}
+.fp1{
+	font-size: 0.9rem;
+}
+.fp2{
+	font-size: 1.5rem;
+}
+.fp4{
+	font-size: 0.9rem;
+}
+
+
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+.body{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+.cdf{
+	margin: 2vh 0 2vh 0;
+}
+.descr{
+	font-size: 0.9rem;
+}
+
+
+.bodypetiscos{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"camaroes"
+	"diversos"
+	"footer"
+	;
+}
+
+.bodyalacarte{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"ceviches"
+	"camaroesalacarte"
+	"festivais"
+	"frutosdomar"
+	"moquecas" 
+	"pescados"
+	"bacalhau" 
+	"carnes"
+	"kids"
+	"footer"
+	;
+}
+
+.drinks20{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"bannerdrinks"
+	"tem1"           
+	"tem2"
+	;
+}
+.bebidas{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"bannerbebidasna"
+	"tem1"
+	"tem2"
+	;
+}
+.bodybebidasa{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"cervejas"   
+	"licores"
+	"destilados" 
+	"cachaças"
+	"rums"       
+	"vodkas"
+	"conhaques"  
+	"whisky"
+	"footer"
+	;
+}
+.sobremex{
+	grid-auto-columns: 100%;
+	grid-template-areas: 
+	"bannersobremesas"
+	"tem1"
+	"tem2"
+	;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

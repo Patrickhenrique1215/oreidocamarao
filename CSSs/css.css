@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+
+/* ----------------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens entre as extremidades */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais, se necessário */
+}
+
+.logo {
+    width: 10%;
+    margin: 0 auto; /* Garante que a logo fique no centro */
+}
+header a{
+	color: black;
+	font-size: 2.4rem;
+}
+/*-----------------------------------------------------------------------*/
+.banner99{
+	left: 0;
+    background-image: url("../images/bannersidebar.jpeg");
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    height: 500px;
+    padding-top: 50px;
+}
+.banner99 button {
+    display: block; /* Faz o botão ocupar toda a largura */
+    width: 50%;
+    padding: 20px 0;
+    color: brown;
+    text-align: center;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+.botaounidadeac {
+    margin: 10% auto; /* Centraliza o botão, removendo margens laterais */
+}
+
+.botaounidadebl {
+    margin: 10% auto; /* Centraliza o botão, removendo margens laterais */
+}
+
+/*------------------------------------------------------------------------*/
+
+.welpy {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+.rew {
+    display: flex; /* Adiciona flex ao contêiner para alinhar os itens */
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.rew p {
+    color: #2d2e2e;
+    font-size: 1.9rem;
+    margin-right: 20px; /* Adiciona espaço entre o texto e a imagem */
+}
+.rew img {
+    width: 25%;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+.banner100{
+    background-image: url("../images/banner100.jpg");
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    height: 500px;
+}
+.american {
+    background-color: rgba(255, 255, 255, 0.5);; /* Cinza com 30% de opacidade */
+    padding: 20px; /* Adiciona um pouco de espaço interno, se necessário */
+    display: inline-block; /* Ajusta a largura da div ao conteúdo */
+    margin: 5%;
+}
+.american h2{
+	font-size: 1.8rem;
+	color: #2d2e2e;
+}
+.american p{
+	color: #2d2e2e;
+}
+.american button{
+	background-color: #2d2e2e;
+	color: white;
+	border: none;
+	padding: 6px;
+	cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.banner101{
+	display: flex;
+	justify-content: space-between;
+}
+.das {
+  width: 50%;
+  padding: 15px;
+}
+.das h2{
+	font-size: 1.8rem;
+	color: #2d2e2e;
+}
+.das p{
+	color: #2d2e2e;
+}
+.das button{
+	background-color: #2d2e2e;
+	color: white;
+	border: none;
+	padding: 6px;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------------*/
+
+.bannerhh{
+	background-image: url("../images/bannerhh.jpg");
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    height: 400px;	
+}
+.barata{
+    background-color: rgba(255, 255, 255, 0.5);; 
+    padding: 20px; /* Adiciona um pouco de espaço interno, se necessário */
+    display: inline-block; /* Ajusta a largura da div ao conteúdo */
+    margin: 5%;
+}
+.barata h2{
+	font-size: 1.8rem;
+	color: #2d2e2e;
+}
+.barata p{
+	color: #2d2e2e;
+}
+.a599{
+	font-size: 1.8rem;
+}
+
+/*--------------------------------------------------------------------*/
+
+.banner103 {
+    background-image: url("../images/banner103.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.saw {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    display: inline-block; /* Ajusta a largura da div ao conteúdo */
+    margin: 5%;
+}
+
+.saw h2 {
+    font-size: 1.8rem;
+    color: #2d2e2e;
+}
+
+.saw p {
+    color: #2d2e2e;
+}
+
+/*----------------------------------------------------------------------*/
+
+.banner102{
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    height: 300px;
+}
+.lou{
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    display: inline-block; /* Ajusta a largura da div ao conteúdo */
+    margin: 5%;
+}	
+
+.lou h2 {
+    font-size: 1.8rem;
+    color: #2d2e2e;
+}
+
+.lou p {
+    color: #2d2e2e;
+}
+
+/*---------------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+footer h3 {
+    width: 100%; /* Faz o título ocupar 100% da largura */
+    text-align: center; /* Centraliza o texto do título */
+    color: white;
+    margin: 0 0 20px 0; /* Espaçamento abaixo do título */
+}
+
+footer > div {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza as divs horizontalmente */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}
+
+footer > div div {
+    width: 50%; /* Cada div ocupa 50% da largura */
+    margin: 10px; /* Espaçamento entre as divs */
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo leve */
+    padding: 15px; /* Espaçamento interno nas divs */
+}
+footer h4 {
+    margin-bottom: 10px; /* Espaçamento abaixo do título das unidades */
+}
+
+footer p {
+    margin: 5px 0; /* Espaçamento vertical entre os parágrafos */
+}
+footer a{
+	color: #2d2e2e;
+}
+footer div p:nth-child(-n+4) {
+    margin-bottom: 15px; /* Adiciona 10px de margem abaixo dos três primeiros <p> */
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 768px) {
+	.logo {
+    	width: 20%;
+	}
+    .rew {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .rew p {
+        font-size: 1.5rem;
+    }
+    .rew img {
+        width: 25%;
+    }
+
+
+}
